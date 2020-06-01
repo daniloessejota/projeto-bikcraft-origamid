@@ -1,0 +1,119 @@
+/*Estilos da Interface*/
+
+@charset "UTF-8";
+
+/*Estilos do Header*/
+.header {background: var(--main-color);}
+
+.header-menu {
+  text-align: right;
+  align-items: center;
+  line-height: 19px;
+}
+
+.item-menu:hover {
+  color: var(--hover-color);
+  transition-duration: 0.5s;
+}
+
+/*Estilos das Imagens de Introdução*/
+.img-home {
+  background: url("/_imagens/img-introducao.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+/*Citação na Introdução*/
+.quote {
+  font-family: var(--quote-font);
+  font-size: var(--general-font-size);
+  font-style: italic;
+  line-height: 24px;
+
+  color: var(--second-text-color);
+}
+
+.division::before,
+.division::after {
+  background: var(--second-text-color);
+}
+
+/*Botão Orçamento na Introdução*/
+.cta-introduction {
+  background-color: var(--main-color);
+  border: 5px solid var(--main-color);
+  transition: background-color, 0.5s;
+}
+
+.cta-introduction:hover {
+  background-color: transparent;
+  color: var(--second-text-color);
+  border: 5px solid var(--main-color);
+}
+
+
+/*Botões das Sessões*/
+.cta-sections {
+  border: 5px solid var(--main-color);
+  background-color: var(--main-color);
+  transition: background-color, 0.5s;
+}
+
+.cta-sections:hover {
+  background-color: transparent;
+  border: 5px solid var(--main-color);
+}
+
+/*Estilos gerais das Sessões*/
+.sectionProducts,
+.sectionPortfolio {text-align: center;}
+
+.card-products li {background-color: var(--main-color);}
+
+.img-card {background-color: var(--text-color);}
+
+.division-titles::after {background: var(--text-color);}
+
+/*Sessão Portfólio*/
+.sectionPortfolio {
+  background: var(--text-color);
+  color: var(--main-color);
+}
+
+.sectionPortfolio .division-titles::after {background: var(--main-color);}
+
+.sectionPortfolio .btnSections {color: var(--second-text-color)}
+
+.sectionPortfolio .cta-sections:hover {
+  color: var(--second-text-color);
+}
+
+/*Imagem no Final da Página*/
+.img-conclusion {
+  background: url("/_imagens/img-fim.jpg") no-repeat center;
+  background-size: cover;
+  text-align: center;
+}
+
+/*Footer*/
+.footer {
+  background-color: var(--text-color);
+  color: var(--main-color);
+}
+
+.footer .contact {
+  color: var(--second-text-color);
+  line-height: 24px;
+  letter-spacing: 0.05em;
+}
+
+.division-footer::after,
+.division-copy::before {
+  background: var(--main-color);
+}
+
+.copyright .copyright-text {
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--second-text-color);
+}
